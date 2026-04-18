@@ -1,0 +1,12 @@
+name: Write-all token test
+
+on:
+  workflow_dispatch:
+
+permissions: write-all
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "GITHUB_TOKEN is write-all for this workflow"
